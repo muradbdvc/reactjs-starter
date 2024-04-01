@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       {/* <Card todoTitle="hello" todoDesc="hi" /> */}
-      { Data.map((item) => <Card todoTitle={item.todoTitle} todoDesc={item.todoDesc} /> ) }
+      { Data.map((item, index) => <Card key="index" todoTitle={item.todoTitle} todoDesc={item.todoDesc} /> ) }
     </>
   )
 }
