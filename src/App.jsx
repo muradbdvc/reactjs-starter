@@ -2,14 +2,20 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Card from './components/Card'
+import Data from './data.json'
+
+// let items = [];
+{/* <Card todoTitle={Data[x].todoTitle} todoDesc={Data[x].todoDesc} /> */}
+//  items = Data.map((item) => <Card todoTitle={item.todoTitle} todoDesc={item.todoDesc} /> )
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 className='text-red-500 text-center font-semibold text-lg'>Hello</h1>
-      <p>this is demo test.</p>
+      {/* <Card todoTitle="hello" todoDesc="hi" /> */}
+      { Data.map((item) => <Card todoTitle={item.todoTitle} todoDesc={item.todoDesc} /> ) }
     </>
   )
 }
