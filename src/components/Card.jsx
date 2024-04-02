@@ -16,6 +16,10 @@ function Card(props) {
             <h1 className='font-bold'>{todoTitle}</h1>
             <h1 className='font-medium'>{todoDesc}</h1>
             <h1 className='font-semibold'>{currentDate}</h1>
+
+            <div className="heart">
+                test
+            </div>
         </div>
     );
 }

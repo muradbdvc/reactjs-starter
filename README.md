@@ -1,65 +1,45 @@
-# Express React Starter
+# Reactjs project
 
-This is a template for using Express and React in the same project. It is based on Create React App.
+A startup for Reactjs developer
 
-Read the article: [Introducing Express React Starter](https://medium.com/burke-knows-words/introducing-express-react-starter-b6d299206a3a)
+# What's included?
 
-OR...
+  *React
+  * React Router
+  * TypeScript
+  * Tailwind CSS [Nested + ]
+  * SCSS
+  * PostCSS
 
-## Prerequisites
-
-- [create-react-app](https://github.com/facebookincubator/create-react-app)
-
-## Installing
+# Quick Start
 
 ```bash
-git clone 'this-repo-url' app-name
-cd app-name
-npm install
-```
+# Clone the Git repository
+git clone https://github.com/muradbdvc/reactjs-starter.git
 
-## Running The App
+# # Install PHP-composer dependencies [It's empty]
+# composer install
 
-The template can be run in development, or in production. For development, use the following workflow.
+# Install node module packages
+npm i
 
-### Start the React App
-
-```
+# Start development mode
 npm start
+
 ```
 
-### Start the Express Server
+Now skip the below code
+<!-- ### Build React App -->
 
-```bash
-cd server
-npm start
-```
-
-![Imgur](https://i.imgur.com/62fQTfJ.png)
-
-This will start both the frontend and API. Both will be reloaded automatically when you make changes.
-
-### What Is Happening Here?
-
-Create React App and the Express server are running on different processes. This is so that React can still use in memory Webpack to do hot reloads really fast.
-
-All AJAX/fetch requests to `/api` are sent back to the Express server which is serving all `/api` routes from the `routes/index.js` file. This is done via a proxy setup in the `package.json` file.
-
-## Building For Production
-
-In production, you want Express to serve up your app.
-
-### Build React App
-
-```bash
+<!-- ```bash
 npm build
-```
+``` -->
 
 This will build the entire app into the "build" folder. This is the folder that you would deploy to your server. The entrypoint is `server.js`. You can test the production build locally by running...
 
-```bash
+<!-- ```bash
 npm start
-```
+``` -->
 
 Now simply visit the Express app at 'http://localhost:5173' and you will see your app served from the 'build' folder. That's all there is to it!
 
