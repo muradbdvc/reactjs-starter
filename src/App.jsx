@@ -5,6 +5,7 @@ import './App.css'
 // import Maping from './components/Maping'
 // import Products from './components/products/Products'
 import State from './components/State'
+import ConditionalRendering from './components/conditionalrendering/Index'
 
 // let items = [];
 {/* <Card todoTitle={Data[x].todoTitle} todoDesc={Data[x].todoDesc} /> */}
@@ -18,7 +19,8 @@ function App() {
       {/* <Products /> */}
       {/* <Card todoTitle="hello" todoDesc="hi" /> */}
       {/* <Maping /> */}
-      <State />
+      {/* <State /> */}
+      <ConditionalRendering />
       {/* { Data.map((item, index) => <Card key="index" todoTitle={item.todoTitle} todoDesc={item.todoDesc} /> ) } */}
     </>
   )
