@@ -84,12 +84,12 @@ const products = [
 
 function Product() {
     return (
-        <div className='columns-4 grid gap-3 grid-cols-4 rounded-s-xl'>
+        <div className='m-20 grid grid-cols-4 gap-1 '>
                 {products.map((product , index) =>
                     <div className='bg-gray-200 m-16 p-6 shadow-xl w-26' key={index}>
-                        <img src={product.image} height="180px" width="130px" />
-                        <a href="#"><h1>{product.title}</h1></a>
-                        <h1>{product.category}</h1>
+                        <img src={product.image} className='w-full' height="180px" width="130px" />
+                        <a href="#"><h2>{product.title}</h2></a>
+                        <h2>{product.category}</h2>
                         <p><b>{product.price} TK</b></p>
                         <p>{product.description}</p>
                     </div>

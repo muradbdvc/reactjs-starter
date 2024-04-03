@@ -3,8 +3,8 @@ import './App.css'
 // import Card from './components/Card'
 // import Data from './data.json'
 // import Maping from './components/Maping'
-import Products from './components/products/Products'
-
+// import Products from './components/products/Products'
+import State from './components/State'
 
 // let items = [];
 {/* <Card todoTitle={Data[x].todoTitle} todoDesc={Data[x].todoDesc} /> */}
@@ -15,9 +15,10 @@ function App() {
 
   return (
     <>
-      <Products />
+      {/* <Products /> */}
       {/* <Card todoTitle="hello" todoDesc="hi" /> */}
       {/* <Maping /> */}
+      <State />
       {/* { Data.map((item, index) => <Card key="index" todoTitle={item.todoTitle} todoDesc={item.todoDesc} /> ) } */}
     </>
   )

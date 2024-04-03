@@ -7,3 +7,25 @@ margin: 0;
 padding: 0;
 box-shadow: none;
 }
+
+@layer base {
+    h1 {
+      @apply font-bold my-3 text-3xl;
+    }
+    h2{
+        @apply font-semibold my-3 text-xl;
+    }
+    h3{
+        @apply font-semibold my-3 text-lg;
+    }
+}
+
+@layer components {
+    .card {
+      background-color: theme('colors.white');
+      border-radius: theme('borderRadius.lg');
+      padding: theme('spacing.6');
+      box-shadow: theme('boxShadow.xl');
+    }
+    /* ... */
+  }
