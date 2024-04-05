@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-function Hooksusestatef() {
+const Hooksusestatef = ()=> {
+  const[count, setCount] = useState(0);
   return (
-    <div>Hooksusestatef</div>
+    <div>Count : {count}</div>
   )
 }
 
