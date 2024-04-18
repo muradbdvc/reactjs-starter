@@ -36,7 +36,7 @@ const navitems = [
     },
 ]
 
-function NabMenu(props) {
+function NabMenu() {
     
   return (
     <div>

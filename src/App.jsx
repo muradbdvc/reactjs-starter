@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import NabMenu from './components/NavMenu/NabMenu'
-import {BrowserRouter,Routes,  Route} from 'react-router-dom'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 // import Card from './components/Card'
 // import Data from './data.json'
 // import Maping from './components/Maping'
@@ -21,8 +21,8 @@ function App() {
       <BrowserRouter>
         <NabMenu />
         <Routes>
-        <Route path="/" /> {/* 👈 Renders at /app/ */}
-      </Routes>
+          <Route path="#/" /> {/* 👈 Renders at /app/ */}
+        </Routes>
     
       </BrowserRouter>
       {/* <Handler /> */}
