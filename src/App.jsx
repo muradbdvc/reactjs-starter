@@ -1,5 +1,7 @@
 import React from 'react'
 import './App.css'
+import NabMenu from './components/NavMenu/NabMenu'
+import {BrowserRouter,Routes,  Route} from 'react-router-dom'
 // import Card from './components/Card'
 // import Data from './data.json'
 // import Maping from './components/Maping'
@@ -16,6 +18,13 @@ function App() {
 
   return (
     <div className='m-20 gap-y-6'>
+      <BrowserRouter>
+        <NabMenu />
+        <Routes>
+        <Route path="/" /> {/* 👈 Renders at /app/ */}
+      </Routes>
+    
+      </BrowserRouter>
       {/* <Handler /> */}
       <Hooksusestatef />
       {/* <Products /> */}
