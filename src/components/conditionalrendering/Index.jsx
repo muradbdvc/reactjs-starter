@@ -7,12 +7,15 @@ function Count (){
     const increase=()=>{
         count: count+1;
     }
-    return({
+    return(
+        <>
         <h1>{count}</h1>
         <button type='button'></button>
-    })
+        </>
+    )
 }
 export default Count;
+
 class ConditionalRendering extends Component {
     constructor(props){
         super(props)
@@ -33,4 +36,4 @@ class ConditionalRendering extends Component {
     }
 }
 
-export default ConditionalRendering;
+// export default ConditionalRendering;
