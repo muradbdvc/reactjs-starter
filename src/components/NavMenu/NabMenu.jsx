@@ -11,25 +11,25 @@ const navitems = [
         cName: 'nav-item'
     },
     {
-        id:1,
+        id:2,
         title:'Service',
         path:'/service',
         cName: 'nav-item'
     },
     {
-        id:1,
+        id:3,
         title:'About',
         path:'/about',
         cName: 'nav-item'
     },
     {
-        id:1,
+        id:4,
         title:'Products',
         path:'/products',
         cName: 'nav-item'
     },
     {
-        id:1,
+        id:5,
         title:'Contact',
         path:'/contact',
         cName: 'nav-item'

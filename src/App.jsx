@@ -2,13 +2,16 @@ import React from 'react'
 import './App.css'
 import NabMenu from './components/NavMenu/NabMenu'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Service from './components/NavMenu/Service'
+import About from './components/NavMenu/About'
+import Contact from './components/NavMenu/Contact'
 // import Card from './components/Card'
 // import Data from './data.json'
 // import Maping from './components/Maping'
 // import Products from './components/products/Products'
 // import State from './components/State'
 // import ConditionalRendering from './components/conditionalrendering/Index'
-import Handler from './components/EventHandler/Handler'
+// import Handler from './components/EventHandler/Handler'
 // import Hooksusestatef from './components/Hooksusestate/hooksusestatef'
 {/* <Card todoTitle={Data[x].todoTitle} todoDesc={Data[x].todoDesc} /> */}
 //  items = Data.map((item) => <Card todoTitle={item.todoTitle} todoDesc={item.todoDesc} /> )
@@ -22,9 +25,12 @@ function App() {
         <NabMenu />
         <Routes>
           <Route path="#/" /> {/* 👈 Renders at /app/ */}
+          <Route path="service" element={<Service />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
-    
       </BrowserRouter>
+  
       {/* <Handler /> */}
       {/* <Hooksusestatef /> */}
       {/* <Products /> */}
