@@ -1,5 +1,6 @@
 form{
-    display: flex;
+    /* display: flex; */
+    width: 50%;
 }
 label{
     margin-bottom: 15px;

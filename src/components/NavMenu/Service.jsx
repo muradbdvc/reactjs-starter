@@ -1,10 +1,10 @@
 import React from 'react'
-import Form from '../Form/Form'
+import Passingdata from '../PassingData/PassingData'
 
 export default function Service() {
   return (
     <div>    
-    Service
+      <Passingdata />
     </div>
   )
 }
