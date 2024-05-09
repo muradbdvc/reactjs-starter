@@ -5,7 +5,8 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Service from './components/NavMenu/Service'
 import About from './components/NavMenu/About'
 import Contact from './components/NavMenu/Contact'
-import PassingData from './components/PassingData/PassingData'
+import TodoList from './components/Todoapp/TodoList'
+// import PassingData from './components/PassingData/PassingData'
 // import Card from './components/Card'
 // import Data from './data.json'
 // import Maping from './components/Maping'
@@ -42,10 +43,13 @@ function App() {
       {/* <Maping /> */}
       {/* <State /> */}
 
-      <PassingData data={data} cData={hndlcData}/>
+      {/* <PassingData data={data} cData={hndlcData}/> */}
       {/* <ConditionalRendering /> */}
       
       {/* { Data.map((item, index) => <Card key="index" todoTitle={item.todoTitle} todoDesc={item.todoDesc} /> ) } */}
+      <div className="App">
+        <TodoList />
+      </div>
     </div>
   )
 }
