@@ -1,13 +1,13 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Nabmenu.css'
 
 const navitems = [
     {
         id:1,
         title:'Home',
-        path:'/',
+        path:'/#',
         cName: 'nav-item'
     },
     {
@@ -33,8 +33,8 @@ const navitems = [
         title:'Contact',
         path:'/contact',
         cName: 'nav-item'
-    },
-]
+    }
+];
 
 function NabMenu() {
     

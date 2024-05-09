@@ -7,15 +7,32 @@ function handleChange() {
  
  return (
  <div className="todo-item">
- <input 
- type="checkbox"
- checked={task.completed}
- onChange={handleChange}
- />
-<p>{task.text}</p>
-<button onClick={() => deleteTask(task.id)}>
- X
- </button>
+    <table class="border-separate border-spacing-2 border-collapse border border-slate-400">
+        <thead>
+            <tr>
+            <th class="border border-slate-300">check</th>
+            <th class="border border-slate-300">data</th>
+            <th class="border border-slate-300">delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td  class="border border-slate-300">
+                    <input 
+                    type="checkbox"
+                    checked={task.completed}
+                    onChange={handleChange}
+                    />
+            </td>
+            <td class="border border-slate-300"><p>{task.text}</p></td>
+            <td class="border border-slate-300">
+                    <button onClick={() => deleteTask(task.id)}>
+                    X
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
  </div>
  );
 }

@@ -2,6 +2,7 @@
 import React from "react";
 import Product from "./Product";
 
+/*
 const products = [
   {
     id: 1,
@@ -82,6 +83,7 @@ const products = [
     }
   }
 ];
+*/
 
 function Products(){
     return(
