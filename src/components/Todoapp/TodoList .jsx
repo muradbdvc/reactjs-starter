@@ -3,6 +3,15 @@ import React, { useState } from 'react'
 import TodoItem from './TodoItem'
 
 function TodoList() {
+    const todoitem =["todo1","todo2"];
+    return ( 
+        <>
+        <TodoItem todoitem={todoitem} />
+        </>
+    );
+}
+export default TodoList;
+/*function TodoList() {
     const [tasks, setTasks] = useState([
     {
     id: 1,
@@ -63,4 +72,4 @@ function TodoList() {
     </div>
     );
    }
-   export default TodoList;
+   export default TodoList;*/

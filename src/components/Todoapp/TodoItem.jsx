@@ -1,6 +1,13 @@
 import React from 'react';
-
-function TodoItem({ task, deleteTask, toggleCompleted }) {
+function TodoItem({ props }) {
+    return (
+        <>
+            Todo
+        </>
+        );
+}
+export default TodoItem; 
+/*function TodoItem({ task, deleteTask, toggleCompleted }) {
 function handleChange() {
  toggleCompleted(task.id);
  }
@@ -36,4 +43,4 @@ function handleChange() {
  </div>
  );
 }
-export default TodoItem;
+export default TodoItem;*/
