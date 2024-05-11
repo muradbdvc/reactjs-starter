@@ -1,12 +1,19 @@
 // import React from 'react'
 import React, { useState } from 'react'
 import TodoItem from './TodoItem'
+import NewTodo from './NewTodo'
 
+const dummytodoitems =["todo1","todo2"];
 function TodoList() {
-    const todoitem =["todo1","todo2"];
+    const [todoitems, settodoitems] =useState(dummytodoitems);
+
+    const NewTodo = (newTodo) => {
+        console.log(newTodo);
+    }
     return ( 
         <>
-        <TodoItem todoitem={todoitem} />
+        <NewTodo onTodo={NewTodo} />
+        <TodoItem todoitems={todoitems} />
         </>
     );
 }

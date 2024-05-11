@@ -1,8 +1,12 @@
 import React from 'react';
-function TodoItem({ props }) {
+import Todo from './Todo';
+function TodoItem(props) {
+    console.log(props.todoitem);
     return (
         <>
-            Todo
+           {props.todoitems.map((todoitem,index)=> (
+            <Todo key={index} todo={todoitem} />
+           ))}
         </>
         );
 }
