@@ -3,7 +3,17 @@ import React, { useState } from 'react'
 import TodoItem from './TodoItem'
 import NewTodo from './NewTodo'
 
-const dummytodoitems =["todo1","todo2"];
+const dummytodoitems =[
+    {
+        id:1,
+       title: "todo1",
+       desc:"this is desc 1"
+    },
+    {
+        id:2,
+        title:"todo2",
+        desc:"this is desc 2"}
+];
 function TodoList() {
     const [todoitems, settodoitems] =useState(dummytodoitems);
 
