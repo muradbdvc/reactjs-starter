@@ -14,7 +14,7 @@ const dummytodoitems =[
         title:"todo2",
         desc:"this is desc 2"}
 ];
-function TodoList() {
+function TodoList(props) {
     const [todoitems, settodoitems] =useState(dummytodoitems);
 
     const NewTodo = (newTodo) => {
