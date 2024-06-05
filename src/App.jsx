@@ -7,6 +7,8 @@ import About from './components/NavMenu/About'
 import Products from './components/products/Products'
 import Contact from './components/NavMenu/Contact'
 import TodoList from './components/Todoapp/TodoList '
+import Faq from './components/Faq/Faq'
+import UseState from './components/Hooks/Useeffect/UseState'
 // import TodoList from './components/Todoapp/TodoList'
 // import PassingData from './components/PassingData/PassingData'
 // import Card from './components/Card'
@@ -52,6 +54,8 @@ function App() {
       {/* { Data.map((item, index) => <Card key="index" todoTitle={item.todoTitle} todoDesc={item.todoDesc} /> ) } */}
       <div className="App">
         <TodoList />
+        <Faq />
+        <UseState />
       </div>
     </div>
   )
