@@ -6,7 +6,7 @@ function TodoItem(props) {
         <>
            {props.todoitems.map((todoitem,index)=> (
             <Todo key={index} todo={todoitem} />
-           ))}
+            ))} 
         </>
         );
 }

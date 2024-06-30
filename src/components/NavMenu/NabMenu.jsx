@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {createBrowserRouter,RouterProvider,Route,Link,json} from 'react-router-dom'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Nabmenu.css'
 
@@ -7,7 +7,7 @@ const navitems = [
     {
         id:1,
         title:'Home',
-        path:'/#',
+        path:'/home',
         cName: 'nav-item'
     },
     {
@@ -41,14 +41,14 @@ function NabMenu() {
   return (
     <div>
         <nav className='navbar'>
-            <Link to='/' className='navbar-logo'>
+            <Link to='*' className='navbar-logo'>
                 Nature
             </Link>
             <ul id='navbar'>
-                {navitems.map(item=>{
+                {navitems.map((item)=>{
                     const {id, path, title} = item;
                     return(
-                    <li key={id} className='item.cName'>
+                    <li key={id} className='cName'>
                         <Link to={path}>
                             {title}
                         </Link>

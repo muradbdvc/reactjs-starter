@@ -33,7 +33,7 @@ function App() {
       <BrowserRouter>
         <NabMenu />
         <Routes>
-          <Route path="#/" /> {/* 👈 Renders at /app/ */}
+          <Route path="#/" /> 
           <Route path="/service" element={<Service />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />

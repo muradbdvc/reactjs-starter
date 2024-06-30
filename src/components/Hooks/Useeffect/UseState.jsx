@@ -7,12 +7,12 @@ const UseState = () => {
   },[count]);
 
   const buttonClick = () =>{
-    setCount((count)=count+1);
+    setCount((count)=>count+1);
   };
 
   return (
     <div>
-      <H2>Count :</H2>
+      <H2>Count :{count}</H2>
       <P>{count}</P>
       <button onClick={buttonClick}>+</button>
     </div>
