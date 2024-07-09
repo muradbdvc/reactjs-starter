@@ -10,6 +10,7 @@ import Contact from './components/NavMenu/Contact'
 import TodoList from './components/Todoapp/TodoList '
 import Faq from './components/Faq/Faq'
 import UseState from './components/Hooks/Useeffect/UseState'
+import Error from './components/NavMenu/Error'
 // import TodoList from './components/Todoapp/TodoList'
 // import PassingData from './components/PassingData/PassingData'
 // import Card from './components/Card'
@@ -35,10 +36,11 @@ function App() {
         <NabMenu />
         <Routes>
           <Route path="/" element={<Home />} /> 
-          <Route path="/service" element={<Service />} />
+          {/* <Route path="/service" element={<Service />} /> */}
           <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
+          {/* <Route path="/products" element={<Products />} /> */}
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
   
