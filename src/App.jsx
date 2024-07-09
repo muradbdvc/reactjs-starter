@@ -4,6 +4,7 @@ import NabMenu from './components/NavMenu/NabMenu'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Service from './components/NavMenu/Service'
 import About from './components/NavMenu/About'
+import Home from './components/NavMenu/Home'
 import Products from './components/products/Products'
 import Contact from './components/NavMenu/Contact'
 import TodoList from './components/Todoapp/TodoList '
@@ -33,7 +34,7 @@ function App() {
       <BrowserRouter>
         <NabMenu />
         <Routes>
-          <Route path="#/" /> 
+          <Route path="/" element={<Home />} /> 
           <Route path="/service" element={<Service />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
