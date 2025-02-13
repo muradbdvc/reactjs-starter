@@ -5,7 +5,7 @@ export default function Service() {
   const data="i'm parents data."
   return (
     <div>    
-      <Passingdata data={data}/>
+      {/* <Passingdata data={data}/> */}
     </div>
   )
 }

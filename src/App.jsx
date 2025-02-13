@@ -33,7 +33,7 @@ function App() {
       <BrowserRouter>
         <NabMenu />
         <Routes>
-          <Route path="#/" /> {/* 👈 Renders at /app/ */}
+          <Route path="#/" /> 👈 Renders at /app/
           <Route path="/service" element={<Service />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
@@ -53,8 +53,9 @@ function App() {
       
       {/* { Data.map((item, index) => <Card key="index" todoTitle={item.todoTitle} todoDesc={item.todoDesc} /> ) } */}
       <div className="App">
-        <TodoList />
-        <Faq />
+        {/* <p>murad</p> */}
+        {/* <TodoList /> */}
+        {/* <Faq /> */}
         <UseState />
       </div>
     </div>

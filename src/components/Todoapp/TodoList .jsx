@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import TodoItem from './TodoItem'
 import NewTodo from './NewTodo'
 
-const dummytodoitems =[
+const dummyTodoItems =[
     {
         id:1,
        title: "todo1",
@@ -15,15 +15,15 @@ const dummytodoitems =[
         desc:"this is desc 2"}
 ];
 function TodoList(props) {
-    const [todoitems, settodoitems] =useState(dummytodoitems);
+    const [todoItems, setTodoItems] =useState(dummyTodoItems);
 
     const NewTodo = (newTodo) => {
-        console.log(newTodo);
+        // console.log(newTodo);
     }
     return ( 
         <>
         <NewTodo onTodo={NewTodo} />
-        <TodoItem todoitems={todoitems} />
+        <TodoItem todoitems={dummyTodoItems} />
         </>
     );
 }

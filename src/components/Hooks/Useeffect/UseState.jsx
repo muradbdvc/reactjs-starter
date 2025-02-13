@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
 const UseState = () => {
-  const [count, setCount] = UseState(0);
+  const [count, setCount] = useState(0);
 
   useEffect(()=>{
   },[count]);
 
   const buttonClick = () =>{
-    setCount((count)=count+1);
-  };
+    setCount(prevCount => prevCount + 1);
+  }
 
   return (
     <div>
-      <H2>Count :</H2>
-      <P>{count}</P>
+      <h2>Count :</h2>
+      <p>{count}</p>
       <button onClick={buttonClick}>+</button>
     </div>
   )

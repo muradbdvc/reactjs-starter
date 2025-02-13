@@ -87,7 +87,7 @@ const products = [
 
 function Products(){
     return(
-      <Product products={products}/>
+      <Product products={Products}/>
     );
   }
 export default Products;

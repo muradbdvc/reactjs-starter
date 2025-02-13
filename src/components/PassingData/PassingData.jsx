@@ -15,7 +15,7 @@ export default function PassingData(props) {
   function choosemessage(msg){
     setMessage(msg)
   }
-  props.cData(data);
+  // props.cData(data);
 
   return (
     <div>

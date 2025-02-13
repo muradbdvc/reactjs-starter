@@ -41,7 +41,7 @@ function NabMenu() {
   return (
     <div>
         <nav className='navbar'>
-            <Link to='/' className='navbar-logo'>
+            <Link to='/#' className='navbar-logo'>
                 Nature
             </Link>
             <ul id='navbar'>

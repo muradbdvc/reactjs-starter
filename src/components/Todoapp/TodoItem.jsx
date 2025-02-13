@@ -2,7 +2,7 @@ import React from 'react'
 import Todo from './Todo'
 
 function TodoItem(props) {
-    console.log(props.todoitem);
+    // console.log(props.todoitem);
     return (
         <>
            {props.todoitems.map((todoitem,index)=> (

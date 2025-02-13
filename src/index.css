@@ -8,17 +8,7 @@ padding: 0;
 box-shadow: none;
 }
 
-@layer base {
-    h1 {
-      @apply font-bold my-3 text-3xl;
-    }
-    h2{
-        @apply font-semibold my-3 text-xl;
-    }
-    h3{
-        @apply font-semibold my-3 text-lg;
-    }
-}
+
 
 @layer components {
     .card {
