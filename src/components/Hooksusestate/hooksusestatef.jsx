@@ -1,14 +1,14 @@
-import React, {useState} from 'react'
-// import Hooksusestate from './Hooksusestate'
+import React, { useState } from "react";
+import Hooksusestate from "./Hooksusestate";
 
-const Hooksusestatef = ()=> {
-  const[count, setCount] = useState(0);
+const Hooksusestatef = () => {
+  const [count, setCount] = useState(0);
   return (
     <>
-    {/* <div>Count : {count}</div> */}
-    {/* <Hooksusestate /> */}
+      <div>Count : {count}</div>
+      <Hooksusestate />
     </>
-  )
-}
+  );
+};
 
-export default Hooksusestatef
+export default Hooksusestatef;
