@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 
 const UseState = () => {
@@ -19,4 +20,22 @@ const UseState = () => {
   )
 }
 
+=======
+import React, { useState, useEffect } from 'react';
+
+const UseState = () => {
+
+
+
+
+  return (
+    <div>
+      <h2>Count : </h2>
+      <p></p>
+      <button> +</button>
+    </div>
+  )
+}
+
+>>>>>>> 8601138f4c5b4f7b9a2aed271d45be428611d30b
 export default UseState

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React from 'react'
 import React, { useState } from 'react'
 import TodoItem from './TodoItem'
@@ -90,3 +91,14 @@ export default TodoList;
     );
    }
    export default TodoList;*/
+=======
+import React from 'react'
+
+const TodoList  = () => {
+  return (
+    <div>TodoList </div>
+  )
+}
+
+export default TodoList 
+>>>>>>> 8601138f4c5b4f7b9a2aed271d45be428611d30b

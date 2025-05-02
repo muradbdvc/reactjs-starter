@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, {useState} from 'react'
 
 const NewTodo = (props) => {
@@ -28,4 +29,14 @@ const NewTodo = (props) => {
   )
 }
 
+=======
+import React from 'react'
+
+const NewTodo = () => {
+  return (
+    <div>NewTodo</div>
+  )
+}
+
+>>>>>>> 8601138f4c5b4f7b9a2aed271d45be428611d30b
 export default NewTodo

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import Todo from './Todo'
 
@@ -49,3 +50,14 @@ function handleChange() {
  );
 }
 export default TodoItem;*/
+=======
+import React from 'react'
+
+const TodoItem = () => {
+  return (
+    <div>TodoItem</div>
+  )
+}
+
+export default TodoItem
+>>>>>>> 8601138f4c5b4f7b9a2aed271d45be428611d30b
