@@ -40,13 +40,8 @@ function NabMenu() {
     
   return (
     <div>
-<<<<<<< HEAD
-        <nav className='navbar'>
-            <Link to='/#' className='navbar-logo'>
-=======
         <nav className='navbar  rounded-md'>
             <Link to='/' className='navbar-logo text-white font-bold'>
->>>>>>> 8601138f4c5b4f7b9a2aed271d45be428611d30b
                 Nature
             </Link>
             <ul id='navbar'>
