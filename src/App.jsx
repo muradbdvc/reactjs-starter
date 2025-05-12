@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import NabMenu from "./components/NavMenu/NabMenu";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Service from "./components/NavMenu/Service";
+// import Service from "./components/NavMenu/Service";
 import About from "./components/NavMenu/About";
 import Home from "./components/NavMenu/Home";
 import Products from "./components/products/Products";
@@ -56,9 +56,9 @@ function App() {
 
       {/* { Data.map((item, index) => <Card key="index" todoTitle={item.todoTitle} todoDesc={item.todoDesc} /> ) } */}
       <div className="App">
-        <TodoList />
-        <Faq />
-        <UseState />
+        {/* <TodoList /> */}
+        {/* <Faq /> */}
+        {/* <UseState /> */}
       </div>
     </div>
   );
