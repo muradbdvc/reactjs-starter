@@ -1,3 +1,7 @@
+<<<<<<<<< Temporary merge branch 1
+import React, { useState, useEffect } from "react";
+=========
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 
 const UseState = () => {
@@ -18,4 +22,5 @@ const UseState = () => {
     </div>
   )
 }
+
 export default UseState;
