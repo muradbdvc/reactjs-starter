@@ -1,9 +1,10 @@
 import React from 'react'
+import Nf from '/public/Assets/404.jpg'
 
 const Error = () => {
   return (
     <div>
-        <h1 className='m-auto font-bold'>404</h1>
+        <h1 className='m-auto font-bold'><img align='center' width="400" height="350" src={Nf} /></h1>
     </div>
   )
 }

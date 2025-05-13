@@ -1,14 +1,16 @@
-import React from 'react'
-import './App.css'
-import NabMenu from './components/NavMenu/NabMenu'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Service from './components/NavMenu/Service'
-import About from './components/NavMenu/About'
-import Products from './components/products/Products'
-import Contact from './components/NavMenu/Contact'
-// import TodoList from './components/Todoapp/TodoList '
-import Faq from './components/Faq/Faq'
-// import UseState from './components/Hooks/Useeffect/UseState'
+import React from "react";
+import "./App.css";
+import NabMenu from "./components/NavMenu/NabMenu";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Service from "./components/NavMenu/Service";
+import About from "./components/NavMenu/About";
+import Home from "./components/NavMenu/Home";
+import Products from "./components/products/Products";
+import Contact from "./components/NavMenu/Contact";
+import TodoList from "./components/Todoapp/TodoList ";
+import Faq from "./components/Faq/Faq";
+// import UseState from "./components/Hooks/Useeffect/UseState";
+import Error from "./components/NavMenu/Error";
 // import TodoList from './components/Todoapp/TodoList'
 // import PassingData from './components/PassingData/PassingData'
 // import Card from './components/Card'
@@ -24,23 +26,23 @@ import Faq from './components/Faq/Faq'
 
 function App() {
   // const [count, setCount] = useState(0)
-  const data = "I am from parant (app)"
-  const hndlcData=(childData)=>{
-        console.log(childData);
-  }
+  const data = "I am from parant (app)";
+  const hndlcData = (childData) => {
+    console.log(childData);
+  };
   return (
-    <div className='m-20 gap-y-6'>
+    <div className="m-20 gap-y-6">
       <BrowserRouter>
         <NabMenu />
         <Routes>
-          <Route path="#/" /> 👈 Renders at /app/
-          <Route path="/service" element={<Service />} />
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/service" element={<Service />} /> */}
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
-  
+
       {/* <Handler /> */}
       {/* <Hooksusestatef /> */}
       {/* <Products /> */}
@@ -50,16 +52,15 @@ function App() {
 
       {/* <PassingData data={data} cData={hndlcData}/> */}
       {/* <ConditionalRendering /> */}
-      
+
       {/* { Data.map((item, index) => <Card key="index" todoTitle={item.todoTitle} todoDesc={item.todoDesc} /> ) } */}
       <div className="App">
-        {/* <p>murad</p> */}
         {/* <TodoList /> */}
         {/* <Faq /> */}
         {/* <UseState /> */}
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
