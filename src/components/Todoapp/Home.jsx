@@ -14,7 +14,9 @@ const dummyTodos = [
 ]
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+        <Todos todos={dummyTodos} />
+    </div>
   )
 }
 
