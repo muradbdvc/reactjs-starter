@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Todos from './Todos'
 const dummyTodos = [
     {
         id: 1,
@@ -14,8 +14,9 @@ const dummyTodos = [
 ]
 const TodoHome = () => {
   return (
-    <div>Todo
-        {/* <Todos todos={dummyTodos} /> */}
+    <div>
+      <h1>Todo App</h1>
+        <Todos todos={dummyTodos} />
     </div>
   )
 }

@@ -1,9 +1,12 @@
 import React from 'react'
-
+import Todo from './Todo'
+ 
 const Todos = (props) => {
     console.log(props.todos)
   return (
-    <div>Todos</div>
+    <div>
+      { props.todos.map((todo)=> <Todo todo={todo} key={todo.id} />)    }
+    </div>
   )
 }
 
