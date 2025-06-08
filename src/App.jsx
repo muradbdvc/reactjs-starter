@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./App.css";
 import NabMenu from "./components/NavMenu/NabMenu";

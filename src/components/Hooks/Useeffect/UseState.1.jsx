@@ -1,18 +1,14 @@
-<<<<<<<<< Temporary merge branch 1
-import React, { useState, useEffect } from "react";
-=========
-<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 
 const UseState = () => {
   const [count, setCount] = useState(0);
 
-  useEffect(()=>{
-  },[count]);
+  useEffect(() => {
+  }, [count]);
 
-  const buttonClick = () =>{
+  const buttonClick = () => {
     setCount(prevCount => prevCount + 1);
-  }
+  };
 
   return (
     <div>
@@ -20,7 +16,6 @@ const UseState = () => {
       <p>{count}</p>
       <button onClick={buttonClick}>+</button>
     </div>
-  )
-}
-
+  );
+};
 export default UseState;

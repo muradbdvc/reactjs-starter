@@ -1,5 +1,5 @@
-import React from 'react'
-import Nf from '/public/Assets/404.jpg'
+// import React from 'react'
+import Nf from '/src/assets/404.jpg'
 
 const Error = () => {
   return (
