@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-type */
 import React from 'react';
-import Home from '../Todoapp/Home';
+import Home from '../Todoapp/TodoHome';
 
 function Product(props) {
     return (

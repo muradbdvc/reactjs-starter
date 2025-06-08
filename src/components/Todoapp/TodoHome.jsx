@@ -12,12 +12,12 @@ const dummyTodos = [
         desc : 'This is desc 2.'
     },
 ]
-const Home = () => {
+const TodoHome = () => {
   return (
-    <div>
-        <Todos todos={dummyTodos} />
+    <div>Todo
+        {/* <Todos todos={dummyTodos} /> */}
     </div>
   )
 }
 
-export default Home
+export default TodoHome

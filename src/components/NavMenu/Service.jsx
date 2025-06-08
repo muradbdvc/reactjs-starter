@@ -1,5 +1,5 @@
 import React from 'react'
-import Passingdata from '../PassingData/PassingData'
+// import Passingdata from '../PassingData/PassingData'
 
 export default function Service() {
   const data="i'm parents data."
