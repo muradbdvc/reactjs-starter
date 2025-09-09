@@ -1,13 +1,16 @@
 /* eslint-disable react/prop-type */
 import React from 'react';
-import Home from '../Todoapp/TodoHome';
+import TodoHome from '../Todoapp/TodoHome';
+import Countries from '../Countries/Countries';
 
 function Product(props) {
     return (
-        <div>
-            <Home />
-        </div>
-        
+        <>
+            <div className='max-w-screen-sm center mx-auto'>
+                <TodoHome />
+            </div>
+                <Countries />
+        </>
     )
 }
 
